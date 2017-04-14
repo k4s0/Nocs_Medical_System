@@ -1,0 +1,19 @@
+respawn = 3;
+respawndelay = 10;
+disabledAI=0;
+joinUnassigned = 0;
+enableDebugConsole = 1;
+allowFunctionsLog = 1;
+author = "Psychobastard";
+
+
+//--------------------------------------------------------------
+//------------------------AIS INJURY----------------------------
+//--------------------------------------------------------------
+class RscTitles {
+	#include "ais_injury\dialogs\rscTitlesAIS.hpp"
+};
+class CfgFunctions {
+	#include "ais_injury\cfgFunctionsAIS.hpp"
+};
+//--------------------------------------------------------------

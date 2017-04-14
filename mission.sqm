@@ -1,0 +1,312 @@
+version=51;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=129;
+	class ItemIDProvider
+	{
+		nextID=10;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={20084.818,108.3407,6722.5986};
+		dir[]={-0.13023543,-0.50386643,0.85395217};
+		up[]={-0.075969145,0.86376649,0.49812466};
+		aside[]={0.98860949,-1.3142562e-007,0.15077543};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Soft_F_SUV",
+	"A3_Characters_F_BLUFOR",
+	"a3_characters_f",
+	"A3_Characters_F_Gamma"
+};
+randomSeed=5822451;
+class ScenarioData
+{
+	respawn=3;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Counter";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=2;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="AIS Injury 21022016 source";
+		overviewText="by Psychobastard";
+		startWeather=0.099999994;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.099999994;
+		forecastFog=0.19999999;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2035;
+		month=7;
+		hour=12;
+		minute=0;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Entities
+	{
+		items=4;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={20080.385,101.01131,6730.7661};
+			name="respawn_west";
+			type="Empty";
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20070.27,102.69233,6736.4121};
+				angles[]={0,0,6.2671909};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=1;
+			type="C_SUV_01_F";
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20082.635,100.98756,6732.0762};
+						angles[]={0.0066682254,3.9567137,6.2805333};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.46666664;
+						rank="SERGEANT";
+						init="this setGroupID [""Alpha""];";
+						isPlayable=1;
+					};
+					id=3;
+					type="B_soldier_AT_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20087.162,100.93336,6729.7466};
+						angles[]={0.0066592805,3.9567137,6.253861};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.46666664;
+						rank="SERGEANT";
+						init="this setGroupID [""Alpha""];";
+						isPlayable=1;
+					};
+					id=4;
+					type="B_support_GMG_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20085.008,100.96707,6734.1646};
+						angles[]={0.0066592805,3.9567137,6.253861};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.33333331;
+						rank="CORPORAL";
+						init="this setGroupID [""Alpha""];";
+						name="p1";
+						isPlayable=1;
+					};
+					id=5;
+					type="B_medic_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20082.705,100.96684,6735.5903};
+						angles[]={0.0013372133,3.9567137,6.2805333};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.2;
+						init="this setGroupID [""Alpha""];";
+						isPlayable=1;
+					};
+					id=6;
+					type="B_soldier_M_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20086.91,100.92356,6732.3208};
+						angles[]={0.0066592805,3.9567137,6.253861};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.2;
+						init="this setGroupID [""Alpha""];";
+						isPlayable=1;
+					};
+					id=7;
+					type="B_G_Soldier_exp_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20079.799,100.97397,6736.0566};
+						angles[]={0.0013439035,3.9567137,6.2805324};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.33333331;
+						rank="CORPORAL";
+						init="this setGroupID [""Alpha""];";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=8;
+					type="B_soldier_AR_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={20079.668,93.481468,6776.563};
+			name="marker_1";
+			type="loc_Hospital";
+			id=9;
+		};
+	};
+};
